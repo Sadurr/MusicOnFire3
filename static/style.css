@@ -1,0 +1,76 @@
+h1 {
+    text-align:center;
+}
+
+body {
+  background-color: #99979b;
+}
+
+.inputOptions{
+    margin: auto;
+    text-align: center;
+}
+
+#inputText{
+    width: 70%;
+    height: 25px;
+    margin: auto;
+}
+
+#inputButton{
+    height: 25px;
+}
+
+#addModalButton{
+    text-align: right;
+    margin-right: 5%;
+    float: right;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(153, 151, 155, 0.4); 
+  }
+
+  .modal-content {
+    background-color: #e7e7e7;
+    margin: auto;
+    text-align: center;
+    padding: 35px;
+    border: 1px solid #888;
+    width: 70%;
+  }
+
+  .close {
+    color: #3b3b3b;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#modalBandText{
+    margin-left: 10%;
+}
+
+#modalAlbumText{
+    margin-left: 9%;
+}
+
+#modalDescriptionText{
+    margin-left: 4%;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="static/style.css">
+  <title>Login</title>
+</head>
+
+<body>
+
+  <h1>Music On Fire</h1>
+
+  <div class="inputOptions">
+    <form action="{{url_for('musicsearch')}}" method="post">
+      <label for="inputType">Search by:</label>
+      <select name="inputType" id="inputType" name="inputType">
+        <option value="band">band</option>
+        <option value="genre">genre</option>
+        <option value="description">description</option>
+      </select>
+
+      <p><input type="text" name="inputText" placeholder="Search for the best music" id="inputText" /></p>
+      <p><input type="submit" value="search" id="inputButton" /></p>
+    </form>
+  </div>
+
+  <div id="addButton" class="addButton">
+    <button id="addModalButton" title="Add missing music">add</button>
+  </div>
+
+  <div id="modal" class="modal">
+    <form action="{{ url_for('musicadd')}}" method="post">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h4>Add missing music</h>
+          <div><input type="text" name="modalBandText" placeholder="Band"></div>
+          <div><input type="text" name="modalAlbumText" placeholder="Album"></div>
+          <div><input type="text" name="modalGenreText" placeholder="Genre"></div>
+          <div><input type="text" name="modalDescriptionText" placeholder="Description"></div>
+          <div><button>add</button></div>
+      </div>
+    </form>
+  </div>
+
+
+  <script src="static/index.js"></script>
+
+</body>
+
+</html>
